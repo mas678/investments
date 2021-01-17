@@ -6,7 +6,7 @@ n = len(reader) - 1
 a = [0] * n
 for i in range(1,n + 1):
     a[i - 1] = float(reader[i][3])
-k = int(input())
+k = int(input()) #Может присутствовать задержка при чтении файла
 b = [[float("-inf")] * n for i in range(k)]
 dp = [[float("-inf")] * n for i in range(k)]
 b_max = [float("-inf")] * k
